@@ -75,11 +75,12 @@ class HomeScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       CircleAvatar(
-                        radius: 30,
+                        radius: 50,
                         backgroundImage: AssetImage(
                             'assets/images/MD Mehedi Hasan.jpg'), // Replace with your image
                       ),
-                      SizedBox(height: 10),
+                      SizedBox(height: 30),
+                      Divider(),
                       Text(
                         'MD Mehedi Hasan',
                         style: TextStyle(
@@ -119,6 +120,7 @@ class HomeScreen extends StatelessWidget {
                           ],
                           repeatForever: true,
                         ),
+
                     ],
                   ),
                 ),
