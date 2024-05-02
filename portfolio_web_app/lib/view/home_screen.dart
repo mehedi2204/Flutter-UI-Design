@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:portfolio_web_app/view/about_me.dart';
 import '../controller/theme_controller.dart';
 import '../model/theme_model.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
@@ -159,9 +161,11 @@ class HomeScreen extends StatelessWidget {
                         ),
                         SidebarButton(
                           text: 'Home',
+                          icon: Icons.home_outlined,
                           onPressed: () {
                             // Navigate to the home screen
                             // You can use Get.to(HomeScreen()) if you're using GetX for navigation
+                            Get.to(HomeScreen());
                           },
                         ),
                         Divider(
@@ -169,9 +173,11 @@ class HomeScreen extends StatelessWidget {
                         ),
                         SidebarButton(
                           text: 'About Me',
+                          icon: Icons.person_outline,
                           onPressed: () {
                             // Show the About Me section
                             // You can implement navigation logic or slider visibility here
+                            Get.to(AboutMe());
                           },
                         ),
                         Divider(
@@ -179,6 +185,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         SidebarButton(
                           text: 'Resume',
+                          icon: Icons.description_outlined,
                           onPressed: () {
                             // Show the Resume section
                             // You can implement navigation logic or slider visibility here
@@ -189,6 +196,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         SidebarButton(
                           text: 'Portfolio',
+                          icon: Icons.work_outline,
                           onPressed: () {
                             // Show the Portfolio section
                             // You can implement navigation logic or slider visibility here
@@ -199,6 +207,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         SidebarButton(
                           text: 'Contact',
+                          icon: Icons.email_outlined,
                           onPressed: () {
                             // Show the Contact section
                             // You can implement navigation logic or slider visibility here
@@ -231,10 +240,12 @@ class HomeScreen extends StatelessWidget {
 
 class SidebarButton extends StatelessWidget {
   final String text;
+  final IconData icon;
   final VoidCallback onPressed;
 
   const SidebarButton({
     required this.text,
+    required this.icon,
     required this.onPressed,
   });
 
@@ -242,19 +253,35 @@ class SidebarButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: onPressed,
-      child: Text(
-        text,
-        style: TextStyle(
-          color: Colors.white,
-          fontSize: 14,
-        ),
+      child: Column(
+        children: [
+          Icon(icon,
+            size: 20,
+          ),
+          SizedBox(height: 5), // Adjust spacing between icon and text
+          Text(
+            text,
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.w300,
+              fontSize: 14,
+            ),
+          ),
+        ],
       ),
       style: ButtonStyle(
         overlayColor: MaterialStateColor.resolveWith(
                 (states) => Colors.white.withOpacity(0.1)), // Hover indicator
         padding: MaterialStateProperty.all(
-            EdgeInsets.symmetric(vertical: 10, horizontal: 20)),
+            EdgeInsets.fromLTRB(20, 15, 20, 15)),
+        shape: MaterialStateProperty.all(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(0),
+          )
+        )
       ),
     );
   }
 }
+
+

@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "portfolio_web_app" "\0"
+            VALUE "CompanyName", "ShowcaseMe" "\0"
+            VALUE "FileDescription", "ShowcaseMe" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "portfolio_web_app" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "portfolio_web_app.exe" "\0"
-            VALUE "ProductName", "portfolio_web_app" "\0"
+            VALUE "InternalName", "ShowcaseMe" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2024 MD Mehedi Hasan. All rights reserved." "\0"
+            VALUE "OriginalFilename", "ShowcaseMe.exe" "\0"
+            VALUE "ProductName", "ShowcaseMe" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
