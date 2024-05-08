@@ -60,13 +60,13 @@ class _AboutMeMobileScreenState extends State<AboutMeMobileScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Column(
-                            crossAxisAlignment: CrossAxisAlignment.values.first,
+                            crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
                               Container(
                                   child: Text(
                                     'About Me',
                                     style: TextStyle(
-                                      fontSize: 46, fontWeight: FontWeight.w100, letterSpacing: 2, color: Colors.grey.shade600,
+                                      fontSize: 60, fontWeight: FontWeight.w700, letterSpacing: 2, color: Colors.grey.shade600,
                                     ),
                                   )
                               ),
@@ -1141,13 +1141,13 @@ class _AboutMeTabletScreenState extends State<AboutMeTabletScreen> {
                       children: [
                         SizedBox(height: 10),
                         Column(
-                            crossAxisAlignment: CrossAxisAlignment.values.first,
+                            crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
                               Container(
                                 child: Text(
                                   'About Me',
                                   style: TextStyle(
-                                      fontSize: 46, fontWeight: FontWeight.w100, letterSpacing: 2, color: Colors.grey.shade600,
+                                      fontSize: 60, fontWeight: FontWeight.w700, letterSpacing: 2, color: Colors.grey.shade600,
                                   ),
                                 )
                               ),
@@ -2190,15 +2190,15 @@ class _AboutMeDesktopScreenState extends State<AboutMeDesktopScreen> {
                   children: [
                     SizedBox(height: 10),
                     Column(
-                        crossAxisAlignment: CrossAxisAlignment.values.first,
+                        crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           Container(
                             child: Text(
                               'About Me',
                               style: TextStyle(
-                                  fontSize: 46,
+                                  fontSize: 60,
                                   color: Colors.grey.shade600,
-                                  fontWeight: FontWeight.w100,
+                                  fontWeight: FontWeight.w700,
                                   letterSpacing: 2),
                             ),
                           ),
