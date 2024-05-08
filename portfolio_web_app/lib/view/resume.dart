@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 
 import '../controller/theme_controller.dart';
 import '../model/theme_model.dart';
+import 'app_color.dart';
 
 class ResumeScreen extends StatefulWidget {
   const ResumeScreen({super.key});
@@ -77,7 +78,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                       Container(
                                         width: 155,
                                         height: 30,
-                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                        color: AppColors.primaryColor,
                                         child: Center(
                                           child: Text(
                                             textWidthBasis: TextWidthBasis.longestLine,
@@ -102,7 +103,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                               decoration: BoxDecoration(
                                                   border: Border(
                                                       left: BorderSide(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         width: 2.5,
                                                       ))),
                                               padding: EdgeInsets.only(left: 10),
@@ -129,7 +130,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                     children: [
                                                       Container(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         child: Padding(
                                                           padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                           child: Text('AUG 2023 - PRESENT', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -162,7 +163,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                               decoration: BoxDecoration(
                                                   border: Border(
                                                       left: BorderSide(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         width: 2.5,
                                                       ))),
                                               padding: EdgeInsets.only(left: 10),
@@ -189,7 +190,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                     children: [
                                                       Container(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         child: Padding(
                                                           padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                           child: Text('2023', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -214,7 +215,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                       ),
                                                       SizedBox(height: 40),
                                                       Container(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         child: Padding(
                                                           padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                           child: Text('2019', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -241,7 +242,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                       ),
                                                       SizedBox(height: 40),
                                                       Container(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         child: Padding(
                                                           padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                           child: Text('2017', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -276,7 +277,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                               decoration: BoxDecoration(
                                                   border: Border(
                                                       left: BorderSide(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         width: 2.5,
                                                       ))),
                                               padding: EdgeInsets.only(left: 10),
@@ -303,7 +304,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                     children: [
                                                       Container(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         child: Padding(
                                                           padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                           child: Text('JUN 2023 - NOV 2023', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -327,7 +328,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                       ),
                                                       SizedBox(height: 40),
                                                       Container(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         child: Padding(
                                                           padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                           child: Text('APR 2023 - MAY 2023', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -359,7 +360,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                               decoration: BoxDecoration(
                                                   border: Border(
                                                       left: BorderSide(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         width: 2.5,
                                                       ))),
                                               padding: EdgeInsets.only(left: 10),
@@ -386,7 +387,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                     children: [
                                                       Container(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         child: Padding(
                                                           padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                           child: Text('OCT 2021 - FEB 2022', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -408,7 +409,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                       ),
                                                       SizedBox(height: 40),
                                                       Container(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         child: Padding(
                                                           padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                           child: Text('SEP 2020 - JULY 2022', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -446,7 +447,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                         decoration: BoxDecoration(
                                             border: Border(
                                                 left: BorderSide(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                  color: AppColors.primaryColor,
                                                   width: 2.5,
                                                 ))),
                                         padding: EdgeInsets.only(left: 10),
@@ -480,7 +481,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                   widthFactor: 0.95,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -504,7 +505,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                   widthFactor: 0.90,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -528,7 +529,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                   widthFactor: 0.97,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -552,7 +553,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                   widthFactor: 0.7,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -576,7 +577,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                   widthFactor: 0.8,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -600,7 +601,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                   widthFactor: 0.65,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -615,7 +616,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                         decoration: BoxDecoration(
                                             border: Border(
                                                 left: BorderSide(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                  color: AppColors.primaryColor,
                                                   width: 2.5,
                                                 ))),
                                         padding: EdgeInsets.only(left: 10),
@@ -649,7 +650,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                   widthFactor: 0.95,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -673,7 +674,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                   widthFactor: 0.60,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -697,7 +698,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                   widthFactor: 0.50,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -712,7 +713,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                         decoration: BoxDecoration(
                                             border: Border(
                                                 left: BorderSide(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                  color: AppColors.primaryColor,
                                                   width: 2.5,
                                                 ))),
                                         padding: EdgeInsets.only(left: 10),
@@ -746,7 +747,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                   widthFactor: 0.90,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -761,7 +762,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                         decoration: BoxDecoration(
                                             border: Border(
                                                 left: BorderSide(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                  color: AppColors.primaryColor,
                                                   width: 2.5,
                                                 ))),
                                         padding: EdgeInsets.only(left: 10),
@@ -795,7 +796,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                   widthFactor: 0.6,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -819,7 +820,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                   widthFactor: 0.8,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -843,7 +844,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                   widthFactor: 0.5,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -858,7 +859,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                         decoration: BoxDecoration(
                                             border: Border(
                                                 left: BorderSide(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                  color: AppColors.primaryColor,
                                                   width: 2.5,
                                                 ))),
                                         padding: EdgeInsets.only(left: 10),
@@ -892,7 +893,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                   widthFactor: 0.90,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -907,7 +908,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                         decoration: BoxDecoration(
                                             border: Border(
                                                 left: BorderSide(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                  color: AppColors.primaryColor,
                                                   width: 2.5,
                                                 ))),
                                         padding: EdgeInsets.only(left: 10),
@@ -941,7 +942,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                   widthFactor: 0.5,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -965,7 +966,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                   widthFactor: 0.75,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -989,7 +990,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                   widthFactor: 0.8,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -1004,7 +1005,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                         decoration: BoxDecoration(
                                             border: Border(
                                                 left: BorderSide(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                  color: AppColors.primaryColor,
                                                   width: 2.5,
                                                 ))),
                                         padding: EdgeInsets.only(left: 10),
@@ -1038,7 +1039,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                                                   widthFactor: 0.7,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -1054,7 +1055,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                           SizedBox(height: 40,),
                           InkWell(
                             onTap: () {},
-                            splashColor: Colors.deepOrangeAccent.withOpacity(0.9),
+                            splashColor: AppColors.primaryColor,
                             hoverColor: Colors.grey.withOpacity(0.2),
                             child: Container(
                               alignment: Alignment.center,
@@ -1062,7 +1063,7 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                               height: 50,
                               decoration: BoxDecoration(
                                 border: Border.all(
-                                  color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                  color: AppColors.primaryColor,
                                 ),
                               ),
                               child: Text('Download CV', style: TextStyle(fontWeight: FontWeight.w600, fontSize: 16),),
@@ -1125,7 +1126,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                       Container(
                                         width: 155,
                                         height: 30,
-                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                        color: AppColors.primaryColor,
                                         child: Center(
                                           child: Text(
                                             textWidthBasis: TextWidthBasis.longestLine,
@@ -1150,7 +1151,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                               decoration: BoxDecoration(
                                                   border: Border(
                                                       left: BorderSide(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         width: 2.5,
                                                       ))),
                                               padding: EdgeInsets.only(left: 10),
@@ -1177,7 +1178,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                     children: [
                                                       Container(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         child: Padding(
                                                           padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                           child: Text('2023', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -1202,7 +1203,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                       ),
                                                       SizedBox(height: 40),
                                                       Container(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         child: Padding(
                                                           padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                           child: Text('2019', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -1229,7 +1230,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                       ),
                                                       SizedBox(height: 40),
                                                       Container(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         child: Padding(
                                                           padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                           child: Text('2017', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -1264,7 +1265,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                               decoration: BoxDecoration(
                                                   border: Border(
                                                       left: BorderSide(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         width: 2.5,
                                                       ))),
                                               padding: EdgeInsets.only(left: 10),
@@ -1291,7 +1292,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                     children: [
                                                       Container(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         child: Padding(
                                                           padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                           child: Text('OCT 2021 - FEB 2022', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -1313,7 +1314,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                       ),
                                                       SizedBox(height: 40),
                                                       Container(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         child: Padding(
                                                           padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                           child: Text('SEP 2020 - JULY 2022', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -1350,7 +1351,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                               decoration: BoxDecoration(
                                                   border: Border(
                                                       left: BorderSide(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         width: 2.5,
                                                       ))),
                                               padding: EdgeInsets.only(left: 10),
@@ -1377,7 +1378,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                     children: [
                                                       Container(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         child: Padding(
                                                           padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                           child: Text('AUG 2023 - PRESENT', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -1410,7 +1411,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                               decoration: BoxDecoration(
                                                   border: Border(
                                                       left: BorderSide(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         width: 2.5,
                                                       ))),
                                               padding: EdgeInsets.only(left: 10),
@@ -1437,7 +1438,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                     children: [
                                                       Container(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         child: Padding(
                                                           padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                           child: Text('JUN 2023 - NOV 2023', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -1461,7 +1462,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                       ),
                                                       SizedBox(height: 40),
                                                       Container(
-                                                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                        color: AppColors.primaryColor,
                                                         child: Padding(
                                                           padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                           child: Text('APR 2023 - MAY 2023', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -1501,7 +1502,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                         decoration: BoxDecoration(
                                             border: Border(
                                                 left: BorderSide(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                  color: AppColors.primaryColor,
                                                   width: 2.5,
                                                 ))),
                                         padding: EdgeInsets.only(left: 10),
@@ -1535,7 +1536,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                   widthFactor: 0.95,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -1559,7 +1560,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                   widthFactor: 0.90,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -1583,7 +1584,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                   widthFactor: 0.97,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -1607,7 +1608,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                   widthFactor: 0.7,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -1631,7 +1632,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                   widthFactor: 0.8,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -1655,7 +1656,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                   widthFactor: 0.65,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -1670,7 +1671,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                         decoration: BoxDecoration(
                                             border: Border(
                                                 left: BorderSide(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                  color: AppColors.primaryColor,
                                                   width: 2.5,
                                                 ))),
                                         padding: EdgeInsets.only(left: 10),
@@ -1704,7 +1705,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                   widthFactor: 0.95,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -1728,7 +1729,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                   widthFactor: 0.60,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -1752,7 +1753,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                   widthFactor: 0.50,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -1767,7 +1768,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                         decoration: BoxDecoration(
                                             border: Border(
                                                 left: BorderSide(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                  color: AppColors.primaryColor,
                                                   width: 2.5,
                                                 ))),
                                         padding: EdgeInsets.only(left: 10),
@@ -1801,7 +1802,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                   widthFactor: 0.90,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -1816,7 +1817,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                         decoration: BoxDecoration(
                                             border: Border(
                                                 left: BorderSide(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                  color: AppColors.primaryColor,
                                                   width: 2.5,
                                                 ))),
                                         padding: EdgeInsets.only(left: 10),
@@ -1850,7 +1851,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                   widthFactor: 0.6,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -1874,7 +1875,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                   widthFactor: 0.8,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -1898,7 +1899,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                   widthFactor: 0.5,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -1913,7 +1914,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                         decoration: BoxDecoration(
                                             border: Border(
                                                 left: BorderSide(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                  color: AppColors.primaryColor,
                                                   width: 2.5,
                                                 ))),
                                         padding: EdgeInsets.only(left: 10),
@@ -1947,7 +1948,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                   widthFactor: 0.90,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -1962,7 +1963,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                         decoration: BoxDecoration(
                                             border: Border(
                                                 left: BorderSide(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                  color: AppColors.primaryColor,
                                                   width: 2.5,
                                                 ))),
                                         padding: EdgeInsets.only(left: 10),
@@ -1996,7 +1997,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                   widthFactor: 0.5,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -2020,7 +2021,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                   widthFactor: 0.75,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -2044,7 +2045,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                   widthFactor: 0.8,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -2059,7 +2060,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                         decoration: BoxDecoration(
                                             border: Border(
                                                 left: BorderSide(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                  color: AppColors.primaryColor,
                                                   width: 2.5,
                                                 ))),
                                         padding: EdgeInsets.only(left: 10),
@@ -2093,7 +2094,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                                                   widthFactor: 0.7,
                                                   child: Container(
                                                     decoration: BoxDecoration(
-                                                      color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                      color: AppColors.primaryColor, // Change color as needed
                                                       borderRadius: BorderRadius.circular(5),
                                                     ),
                                                   ),
@@ -2109,7 +2110,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                           SizedBox(height: 40,),
                           InkWell(
                             onTap: () {},
-                            splashColor: Colors.deepOrangeAccent.withOpacity(0.9),
+                            splashColor: AppColors.primaryColor,
                             hoverColor: Colors.grey.withOpacity(0.2),
                             child: Container(
                               alignment: Alignment.center,
@@ -2117,7 +2118,7 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                               height: 50,
                               decoration: BoxDecoration(
                                 border: Border.all(
-                                  color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                  color: AppColors.primaryColor,
                                 ),
                               ),
                               child: Text('Download CV', style: TextStyle(fontWeight: FontWeight.w600, fontSize: 16),),
@@ -2177,7 +2178,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                             Container(
                               width: 155,
                               height: 30,
-                              color: Colors.deepOrangeAccent.withOpacity(0.9),
+                              color: AppColors.primaryColor,
                               child: Center(
                                 child: Text(
                                   textWidthBasis: TextWidthBasis.longestLine,
@@ -2202,7 +2203,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                     decoration: BoxDecoration(
                                         border: Border(
                                             left: BorderSide(
-                                              color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                              color: AppColors.primaryColor,
                                               width: 2.5,
                                             ))),
                                     padding: EdgeInsets.only(left: 10),
@@ -2229,7 +2230,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Container(
-                                              color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                              color: AppColors.primaryColor,
                                               child: Padding(
                                                 padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                 child: Text('2023', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -2254,7 +2255,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                             ),
                                             SizedBox(height: 40),
                                             Container(
-                                              color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                              color: AppColors.primaryColor,
                                               child: Padding(
                                                 padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                 child: Text('2019', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -2281,7 +2282,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                             ),
                                             SizedBox(height: 40),
                                             Container(
-                                              color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                              color: AppColors.primaryColor,
                                               child: Padding(
                                                 padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                 child: Text('2017', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -2316,7 +2317,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                     decoration: BoxDecoration(
                                         border: Border(
                                             left: BorderSide(
-                                              color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                              color: AppColors.primaryColor,
                                               width: 2.5,
                                             ))),
                                     padding: EdgeInsets.only(left: 10),
@@ -2343,7 +2344,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Container(
-                                              color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                              color: AppColors.primaryColor,
                                               child: Padding(
                                                 padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                 child: Text('OCT 2021 - FEB 2022', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -2365,7 +2366,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                             ),
                                             SizedBox(height: 40),
                                             Container(
-                                              color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                              color: AppColors.primaryColor,
                                               child: Padding(
                                                 padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                 child: Text('SEP 2020 - JULY 2022', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -2392,7 +2393,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                   SizedBox(height: 200),
                                   InkWell(
                                     onTap: () {},
-                                    splashColor: Colors.deepOrangeAccent.withOpacity(0.9),
+                                    splashColor: AppColors.primaryColor,
                                     hoverColor: Colors.grey.withOpacity(0.2),
                                     child: Container(
                                       alignment: Alignment.center,
@@ -2400,7 +2401,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                       height: 50,
                                       decoration: BoxDecoration(
                                         border: Border.all(
-                                          color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                          color: AppColors.primaryColor,
                                         ),
                                       ),
                                       child: Text('Download CV', style: TextStyle(fontWeight: FontWeight.w600, fontSize: 16),),
@@ -2419,7 +2420,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                     decoration: BoxDecoration(
                                         border: Border(
                                             left: BorderSide(
-                                              color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                              color: AppColors.primaryColor,
                                               width: 2.5,
                                             ))),
                                     padding: EdgeInsets.only(left: 10),
@@ -2446,7 +2447,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Container(
-                                              color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                              color: AppColors.primaryColor,
                                               child: Padding(
                                                 padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                 child: Text('AUG 2023 - PRESENT', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -2479,7 +2480,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                     decoration: BoxDecoration(
                                         border: Border(
                                             left: BorderSide(
-                                              color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                              color: AppColors.primaryColor,
                                               width: 2.5,
                                             ))),
                                     padding: EdgeInsets.only(left: 10),
@@ -2506,7 +2507,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Container(
-                                              color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                              color: AppColors.primaryColor,
                                               child: Padding(
                                                 padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                 child: Text('JUN 2023 - NOV 2023', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -2530,7 +2531,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                             ),
                                             SizedBox(height: 40),
                                             Container(
-                                              color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                              color: AppColors.primaryColor,
                                               child: Padding(
                                                 padding: const EdgeInsets.fromLTRB(20, 00, 05, 3),
                                                 child: Text('APR 2023 - MAY 2023', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),),
@@ -2569,7 +2570,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                     decoration: BoxDecoration(
                                         border: Border(
                                             left: BorderSide(
-                                              color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                              color: AppColors.primaryColor,
                                               width: 2.5,
                                             ))),
                                     padding: EdgeInsets.only(left: 10),
@@ -2603,7 +2604,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                               widthFactor: 0.95,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                  color: AppColors.primaryColor, // Change color as needed
                                                   borderRadius: BorderRadius.circular(5),
                                                 ),
                                               ),
@@ -2627,7 +2628,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                               widthFactor: 0.90,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                  color: AppColors.primaryColor, // Change color as needed
                                                   borderRadius: BorderRadius.circular(5),
                                                 ),
                                               ),
@@ -2651,7 +2652,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                               widthFactor: 0.97,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                  color: AppColors.primaryColor, // Change color as needed
                                                   borderRadius: BorderRadius.circular(5),
                                                 ),
                                               ),
@@ -2675,7 +2676,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                               widthFactor: 0.7,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                  color: AppColors.primaryColor, // Change color as needed
                                                   borderRadius: BorderRadius.circular(5),
                                                 ),
                                               ),
@@ -2699,7 +2700,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                               widthFactor: 0.8,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                  color: AppColors.primaryColor, // Change color as needed
                                                   borderRadius: BorderRadius.circular(5),
                                                 ),
                                               ),
@@ -2723,7 +2724,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                               widthFactor: 0.65,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                  color: AppColors.primaryColor, // Change color as needed
                                                   borderRadius: BorderRadius.circular(5),
                                                 ),
                                               ),
@@ -2738,7 +2739,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                     decoration: BoxDecoration(
                                         border: Border(
                                             left: BorderSide(
-                                              color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                              color: AppColors.primaryColor,
                                               width: 2.5,
                                             ))),
                                     padding: EdgeInsets.only(left: 10),
@@ -2772,7 +2773,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                               widthFactor: 0.95,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                  color: AppColors.primaryColor, // Change color as needed
                                                   borderRadius: BorderRadius.circular(5),
                                                 ),
                                               ),
@@ -2796,7 +2797,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                               widthFactor: 0.60,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                  color: AppColors.primaryColor, // Change color as needed
                                                   borderRadius: BorderRadius.circular(5),
                                                 ),
                                               ),
@@ -2820,7 +2821,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                               widthFactor: 0.50,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                  color: AppColors.primaryColor, // Change color as needed
                                                   borderRadius: BorderRadius.circular(5),
                                                 ),
                                               ),
@@ -2835,7 +2836,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                     decoration: BoxDecoration(
                                         border: Border(
                                             left: BorderSide(
-                                              color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                              color: AppColors.primaryColor,
                                               width: 2.5,
                                             ))),
                                     padding: EdgeInsets.only(left: 10),
@@ -2869,7 +2870,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                               widthFactor: 0.90,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                  color: AppColors.primaryColor, // Change color as needed
                                                   borderRadius: BorderRadius.circular(5),
                                                 ),
                                               ),
@@ -2884,7 +2885,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                     decoration: BoxDecoration(
                                         border: Border(
                                             left: BorderSide(
-                                              color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                              color: AppColors.primaryColor,
                                               width: 2.5,
                                             ))),
                                     padding: EdgeInsets.only(left: 10),
@@ -2918,7 +2919,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                               widthFactor: 0.6,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                  color: AppColors.primaryColor, // Change color as needed
                                                   borderRadius: BorderRadius.circular(5),
                                                 ),
                                               ),
@@ -2942,7 +2943,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                               widthFactor: 0.8,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                  color: AppColors.primaryColor, // Change color as needed
                                                   borderRadius: BorderRadius.circular(5),
                                                 ),
                                               ),
@@ -2966,7 +2967,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                               widthFactor: 0.5,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                  color: AppColors.primaryColor, // Change color as needed
                                                   borderRadius: BorderRadius.circular(5),
                                                 ),
                                               ),
@@ -2981,7 +2982,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                     decoration: BoxDecoration(
                                         border: Border(
                                             left: BorderSide(
-                                              color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                              color: AppColors.primaryColor,
                                               width: 2.5,
                                             ))),
                                     padding: EdgeInsets.only(left: 10),
@@ -3015,7 +3016,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                               widthFactor: 0.90,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                  color: AppColors.primaryColor, // Change color as needed
                                                   borderRadius: BorderRadius.circular(5),
                                                 ),
                                               ),
@@ -3030,7 +3031,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                     decoration: BoxDecoration(
                                         border: Border(
                                             left: BorderSide(
-                                              color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                              color: AppColors.primaryColor,
                                               width: 2.5,
                                             ))),
                                     padding: EdgeInsets.only(left: 10),
@@ -3064,7 +3065,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                               widthFactor: 0.5,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                  color: AppColors.primaryColor, // Change color as needed
                                                   borderRadius: BorderRadius.circular(5),
                                                 ),
                                               ),
@@ -3088,7 +3089,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                               widthFactor: 0.75,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                  color: AppColors.primaryColor, // Change color as needed
                                                   borderRadius: BorderRadius.circular(5),
                                                 ),
                                               ),
@@ -3112,7 +3113,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                               widthFactor: 0.8,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                  color: AppColors.primaryColor, // Change color as needed
                                                   borderRadius: BorderRadius.circular(5),
                                                 ),
                                               ),
@@ -3127,7 +3128,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                     decoration: BoxDecoration(
                                         border: Border(
                                             left: BorderSide(
-                                              color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                              color: AppColors.primaryColor,
                                               width: 2.5,
                                             ))),
                                     padding: EdgeInsets.only(left: 10),
@@ -3161,7 +3162,7 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                               widthFactor: 0.7,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  color: Colors.deepOrangeAccent.withOpacity(0.9), // Change color as needed
+                                                  color: AppColors.primaryColor, // Change color as needed
                                                   borderRadius: BorderRadius.circular(5),
                                                 ),
                                               ),

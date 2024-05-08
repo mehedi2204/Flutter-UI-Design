@@ -7,6 +7,8 @@ import '../controller/theme_controller.dart';
 import '../model/theme_model.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'app_color.dart';
+
 class AboutMe extends StatefulWidget {
   const AboutMe({super.key});
 
@@ -73,7 +75,7 @@ class _AboutMeMobileScreenState extends State<AboutMeMobileScreen> {
                               Container(
                                 width: 290,
                                 height: 30,
-                                color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                color: AppColors.primaryColor,
                                 child: Center(
                                   child: Text(
                                     textWidthBasis: TextWidthBasis.longestLine,
@@ -463,7 +465,7 @@ class _AboutMeMobileScreenState extends State<AboutMeMobileScreen> {
                                       decoration: BoxDecoration(
                                           border: Border(
                                               left: BorderSide(
-                                                color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                color: AppColors.primaryColor,
                                                 width: 2.5,
                                               ))),
                                       padding: EdgeInsets.only(left: 10),
@@ -725,7 +727,7 @@ class _AboutMeMobileScreenState extends State<AboutMeMobileScreen> {
                                       decoration: BoxDecoration(
                                           border: Border(
                                               left: BorderSide(
-                                                color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                color: AppColors.primaryColor,
                                                 width: 2.5,
                                               ))),
                                       padding: EdgeInsets.only(left: 10),
@@ -833,7 +835,7 @@ class _AboutMeMobileScreenState extends State<AboutMeMobileScreen> {
                                       decoration: BoxDecoration(
                                           border: Border(
                                               left: BorderSide(
-                                                color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                color: AppColors.primaryColor,
                                                 width: 2.5,
                                               ))),
                                       padding: EdgeInsets.only(left: 10),
@@ -992,7 +994,7 @@ class _AboutMeMobileScreenState extends State<AboutMeMobileScreen> {
                                       decoration: BoxDecoration(
                                           border: Border(
                                               left: BorderSide(
-                                                color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                color: AppColors.primaryColor,
                                                 width: 2.5,
                                               ))),
                                       padding: EdgeInsets.only(left: 10),
@@ -1016,7 +1018,7 @@ class _AboutMeMobileScreenState extends State<AboutMeMobileScreen> {
                                                 shape: RoundedRectangleBorder(
                                                   borderRadius: BorderRadius.circular(10),
                                                 ),
-                                                shadowColor: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                shadowColor: AppColors.primaryColor,
                                                 child: Padding(
                                                   padding: EdgeInsets.all(10),
                                                   child: Column(
@@ -1044,7 +1046,7 @@ class _AboutMeMobileScreenState extends State<AboutMeMobileScreen> {
                                               shape: RoundedRectangleBorder(
                                                 borderRadius: BorderRadius.circular(10),
                                               ),
-                                              shadowColor: Colors.deepOrangeAccent.withOpacity(0.9),
+                                              shadowColor: AppColors.primaryColor,
                                               child: Padding(
                                                 padding: EdgeInsets.all(10),
                                                 child: Column(
@@ -1072,7 +1074,7 @@ class _AboutMeMobileScreenState extends State<AboutMeMobileScreen> {
                                                 shape: RoundedRectangleBorder(
                                                   borderRadius: BorderRadius.circular(10),
                                                 ),
-                                                shadowColor: Colors.deepOrangeAccent.withOpacity(0.9),
+                                                shadowColor: AppColors.primaryColor,
                                                 child: Padding(
                                                   padding: EdgeInsets.all(10),
                                                   child: Column(
@@ -1154,7 +1156,7 @@ class _AboutMeTabletScreenState extends State<AboutMeTabletScreen> {
                               Container(
                                 width: 290,
                                 height: 30,
-                                color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                color: AppColors.primaryColor,
                                 child: Center(
                                   child: Text(
                                     textWidthBasis: TextWidthBasis.longestLine,
@@ -1552,7 +1554,7 @@ class _AboutMeTabletScreenState extends State<AboutMeTabletScreen> {
                           decoration: BoxDecoration(
                               border: Border(
                                   left: BorderSide(
-                                    color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                    color: AppColors.primaryColor,
                                     width: 2.5,
                                   ))),
                           padding: EdgeInsets.only(left: 10),
@@ -1798,7 +1800,7 @@ class _AboutMeTabletScreenState extends State<AboutMeTabletScreen> {
                           decoration: BoxDecoration(
                               border: Border(
                                   left: BorderSide(
-                                    color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                    color: AppColors.primaryColor,
                                     width: 2.5,
                                   ))),
                           padding: EdgeInsets.only(left: 10),
@@ -1900,7 +1902,7 @@ class _AboutMeTabletScreenState extends State<AboutMeTabletScreen> {
                           decoration: BoxDecoration(
                               border: Border(
                                   left: BorderSide(
-                                    color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                    color: AppColors.primaryColor,
                                     width: 2.5,
                                   ))),
                           padding: EdgeInsets.only(left: 10),
@@ -2059,7 +2061,7 @@ class _AboutMeTabletScreenState extends State<AboutMeTabletScreen> {
                           decoration: BoxDecoration(
                               border: Border(
                                   left: BorderSide(
-                                    color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                    color: AppColors.primaryColor,
                                     width: 2.5,
                                   ))),
                           padding: EdgeInsets.only(left: 10),
@@ -2082,7 +2084,7 @@ class _AboutMeTabletScreenState extends State<AboutMeTabletScreen> {
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(10),
                                   ),
-                                  shadowColor: Colors.deepOrangeAccent.withOpacity(0.9),
+                                  shadowColor: AppColors.primaryColor,
                                   child: Padding(
                                     padding: EdgeInsets.all(10),
                                     child: Column(
@@ -2100,7 +2102,7 @@ class _AboutMeTabletScreenState extends State<AboutMeTabletScreen> {
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(10),
                                   ),
-                                  shadowColor: Colors.deepOrangeAccent.withOpacity(0.9),
+                                  shadowColor: AppColors.primaryColor,
                                   child: Padding(
                                     padding: EdgeInsets.all(10),
                                     child: Column(
@@ -2127,7 +2129,7 @@ class _AboutMeTabletScreenState extends State<AboutMeTabletScreen> {
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(10),
                                     ),
-                                    shadowColor: Colors.deepOrangeAccent.withOpacity(0.9),
+                                    shadowColor: AppColors.primaryColor,
                                     child: Padding(
                                       padding: EdgeInsets.all(10),
                                       child: Column(
@@ -2205,7 +2207,7 @@ class _AboutMeDesktopScreenState extends State<AboutMeDesktopScreen> {
                           Container(
                             width: 290,
                             height: 30,
-                            color: Colors.deepOrangeAccent.withOpacity(0.9),
+                            color: AppColors.primaryColor,
                             child: Center(
                               child: Text(
                                 textWidthBasis: TextWidthBasis.longestLine,
@@ -2603,7 +2605,7 @@ class _AboutMeDesktopScreenState extends State<AboutMeDesktopScreen> {
                       decoration: BoxDecoration(
                           border: Border(
                               left: BorderSide(
-                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                        color: AppColors.primaryColor,
                         width: 2.5,
                       ))),
                       padding: EdgeInsets.only(left: 10),
@@ -2841,7 +2843,7 @@ class _AboutMeDesktopScreenState extends State<AboutMeDesktopScreen> {
                       decoration: BoxDecoration(
                           border: Border(
                               left: BorderSide(
-                        color: Colors.deepOrangeAccent.withOpacity(0.9),
+                        color: AppColors.primaryColor,
                         width: 2.5,
                       ))),
                       padding: EdgeInsets.only(left: 10),
@@ -2937,7 +2939,7 @@ class _AboutMeDesktopScreenState extends State<AboutMeDesktopScreen> {
                       decoration: BoxDecoration(
                           border: Border(
                               left: BorderSide(
-                                color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                color: AppColors.primaryColor,
                                 width: 2.5,
                               ))),
                       padding: EdgeInsets.only(left: 10),
@@ -3094,7 +3096,7 @@ class _AboutMeDesktopScreenState extends State<AboutMeDesktopScreen> {
                       decoration: BoxDecoration(
                           border: Border(
                               left: BorderSide(
-                                color: Colors.deepOrangeAccent.withOpacity(0.9),
+                                color: AppColors.primaryColor,
                                 width: 2.5,
                               ))),
                       padding: EdgeInsets.only(left: 10),
@@ -3117,7 +3119,7 @@ class _AboutMeDesktopScreenState extends State<AboutMeDesktopScreen> {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10),
                             ),
-                            shadowColor: Colors.deepOrangeAccent.withOpacity(0.9),
+                            shadowColor: AppColors.primaryColor,
                             child: Padding(
                               padding: EdgeInsets.all(10),
                               child: Column(
@@ -3135,7 +3137,7 @@ class _AboutMeDesktopScreenState extends State<AboutMeDesktopScreen> {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10),
                             ),
-                            shadowColor: Colors.deepOrangeAccent.withOpacity(0.9),
+                            shadowColor: AppColors.primaryColor,
                             child: Padding(
                               padding: EdgeInsets.all(10),
                               child: Column(
@@ -3153,7 +3155,7 @@ class _AboutMeDesktopScreenState extends State<AboutMeDesktopScreen> {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10),
                             ),
-                            shadowColor: Colors.deepOrangeAccent.withOpacity(0.9),
+                            shadowColor: AppColors.primaryColor,
                             child: Padding(
                               padding: EdgeInsets.all(10),
                               child: Column(

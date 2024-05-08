@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'app_color.dart';
+
 class AppDrawer extends StatelessWidget {
   final Function(int) onItemSelected;
   final int selectedIndex;
@@ -31,7 +33,7 @@ class AppDrawer extends StatelessWidget {
                   Text(
                     'MD Mehedi Hasan',
                     style: TextStyle(
-                      color: Colors.deepOrangeAccent.withOpacity(0.9),
+                      color: AppColors.primaryColor,
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),

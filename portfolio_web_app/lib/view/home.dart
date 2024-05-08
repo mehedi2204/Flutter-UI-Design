@@ -9,6 +9,7 @@ import 'package:portfolio_web_app/view/resume.dart';
 
 import '../controller/theme_controller.dart';
 import '../model/theme_model.dart';
+import 'app_color.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -70,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               CircleAvatar(
                                 radius: 60,
                                 backgroundColor:
-                                    Colors.deepOrangeAccent.withOpacity(0.9),
+                                    AppColors.primaryColor,
                                 backgroundImage: AssetImage(
                                     'assets/images/MD Mehedi Hasan.jpg'), // Replace with your image
                               ),
@@ -90,7 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 InkWell(
                                   onTap: () => selectScreen(i),
                                   hoverColor:
-                                      Colors.deepOrangeAccent.withOpacity(0.9),
+                                      AppColors.primaryColor,
                                   child: Container(
                                     decoration: BoxDecoration(
                                       color: selectedIndex == i
@@ -304,7 +305,7 @@ class _HomeContentState extends State<HomeContent> {
                   'MD Mehedi Hasan',
                   style: TextStyle(
                     fontSize: 55,
-                    color: Colors.deepOrangeAccent.withOpacity(0.9),
+                    color: AppColors.primaryColor,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -358,7 +359,7 @@ class _HomeContentState extends State<HomeContent> {
                   'MD Mehedi Hasan',
                   style: TextStyle(
                     fontSize: 35,
-                    color: Colors.deepOrangeAccent.withOpacity(0.9),
+                    color: AppColors.primaryColor,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
