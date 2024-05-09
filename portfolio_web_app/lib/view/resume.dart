@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../controller/download_file.dart';
 import '../controller/theme_controller.dart';
 import '../model/theme_model.dart';
 import 'app_color.dart';
@@ -1054,7 +1055,9 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
                           ),
                           SizedBox(height: 40,),
                           InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              _downloadCV();
+                            },
                             splashColor: AppColors.primaryColor,
                             hoverColor: Colors.grey.withOpacity(0.2),
                             child: Container(
@@ -1078,6 +1081,12 @@ class _ResumeMobileScreenState extends State<ResumeMobileScreen> {
         );
       }),
     );
+  }
+
+  Future<void> _downloadCV() async {
+    String assetPath = 'assets/file_for_download/MD Mehedi Hasan (CV).pdf';
+    String fileName = 'MD Mehedi Hasan (CV).pdf';
+    await downloadFile(context, assetPath, fileName); // Call the function from the imported file
   }
 }
 
@@ -2109,7 +2118,9 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
                           ),
                           SizedBox(height: 40,),
                           InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              _downloadCV();
+                            },
                             splashColor: AppColors.primaryColor,
                             hoverColor: Colors.grey.withOpacity(0.2),
                             child: Container(
@@ -2134,6 +2145,12 @@ class _ResumeTabletScreenState extends State<ResumeTabletScreen> {
       }),
     );
   }
+
+  Future<void> _downloadCV() async {
+    String assetPath = 'assets/file_for_download/MD Mehedi Hasan (CV).pdf';
+    String fileName = 'MD Mehedi Hasan (CV).pdf';
+    await downloadFile(context, assetPath, fileName); // Call the function from the imported file
+  }
 }
 
 
@@ -2146,6 +2163,7 @@ class ResumeDesktopScreen extends StatefulWidget {
 }
 
 class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -2392,7 +2410,9 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
                                   ),
                                   SizedBox(height: 200),
                                   InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      _downloadCV();
+                                    },
                                     splashColor: AppColors.primaryColor,
                                     hoverColor: Colors.grey.withOpacity(0.2),
                                     child: Container(
@@ -3185,5 +3205,11 @@ class _ResumeDesktopScreenState extends State<ResumeDesktopScreen> {
         );
       }),
     );
+  }
+
+  Future<void> _downloadCV() async {
+    String assetPath = 'assets/file_for_download/MD Mehedi Hasan (CV).pdf';
+    String fileName = 'MD Mehedi Hasan (CV).pdf';
+    await downloadFile(context, assetPath, fileName); // Call the function from the imported file
   }
 }

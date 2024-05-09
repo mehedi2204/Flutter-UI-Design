@@ -55,7 +55,7 @@ class _ContactMobileScreenState extends State<ContactMobileScreen> {
           children: [
             SingleChildScrollView(
               physics: BouncingScrollPhysics(),
-              child: Padding(padding: EdgeInsets.all(40),
+              child: Padding(padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
                   child: Center(
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
