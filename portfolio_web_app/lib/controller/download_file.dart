@@ -1,11 +1,11 @@
-import 'dart:io' show File, Platform;
+import 'dart:io' show Directory, File, Platform;
 import 'dart:typed_data';
-import 'package:android_intent_plus/android_intent.dart';
-import 'package:file_saver/file_saver.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
+import 'package:open_file/open_file.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 Future<void> downloadFile(BuildContext context, String assetPath, String fileName) async {
   try {
@@ -16,7 +16,7 @@ Future<void> downloadFile(BuildContext context, String assetPath, String fileNam
     late String filePath;
 
     if (Platform.isAndroid || Platform.isIOS) {
-      final directory = await getExternalStorageDirectory();
+      final directory = await getDownloadsDirectory();
       filePath = '${directory!.path}/$fileName';
     } else if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
       final directory = await getDownloadsDirectory();
@@ -28,32 +28,8 @@ Future<void> downloadFile(BuildContext context, String assetPath, String fileNam
     final file = File(filePath);
     await file.writeAsBytes(bytes);
 
-    // Save the file using file_saver
-    if (Platform.isAndroid || Platform.isIOS) {
-      await FileSaver.instance.saveFile(
-        name: '$fileName',
-      );
-      if (Platform.isAndroid && fileName.toLowerCase().endsWith('.apk')) {
-        _installApk(filePath);
-      } else {
-        _showToast(context, 'File saved at: $filePath');
-      }
-    } else {
-      // For desktop platforms, show a dialog instead of a toast
-      showPlatformDialog(
-        context: context,
-        builder: (_) => PlatformAlertDialog(
-          title: Text('Download Complete'),
-          content: Text('File saved at: $filePath'),
-          actions: <Widget>[
-            PlatformDialogAction(
-              child: PlatformText('OK'),
-              onPressed: () => Navigator.pop(context),
-            ),
-          ],
-        ),
-      );
-    }
+    // Show toast with buttons
+    _showToastWithButtons(context, 'File saved at: $filePath', filePath);
   } catch (e) {
     // Handle errors
     print('Error downloading file: $e');
@@ -61,44 +37,77 @@ Future<void> downloadFile(BuildContext context, String assetPath, String fileNam
   }
 }
 
-void _showToast(BuildContext context, String message, {bool isError = false}) {
-  if (Platform.isAndroid || Platform.isIOS) {
-    showPlatformDialog(
-      context: context,
-      builder: (_) => PlatformAlertDialog(
-        title: Text(isError ? 'Error' : 'Success'),
-        content: Text(message),
-        actions: <Widget>[
-          PlatformDialogAction(
-            child: PlatformText('OK'),
-            onPressed: () => Navigator.pop(context),
-          ),
-        ],
-      ),
-    );
-  } else {
-    // For desktop platforms, show a dialog instead of a toast
-    showPlatformDialog(
-      context: context,
-      builder: (_) => PlatformAlertDialog(
-        title: Text(isError ? 'Error' : 'Success'),
-        content: Text(message),
-        actions: <Widget>[
-          PlatformDialogAction(
-            child: PlatformText('OK'),
-            onPressed: () => Navigator.pop(context),
-          ),
-        ],
-      ),
-    );
-  }
+
+void _showToastWithButtons(BuildContext context, String message, String filePath) {
+  showPlatformDialog(
+    context: context,
+    builder: (_) => PlatformAlertDialog(
+      title: Text('Download Complete'),
+      content: Text(message),
+      actions: <Widget>[
+        PlatformDialogAction(
+          child: PlatformText('Close'),
+          onPressed: () => Navigator.pop(context),
+        ),
+        PlatformDialogAction(
+          child: PlatformText('Open'),
+          onPressed: () async {
+            final file = File(filePath);
+            if (await file.exists()) {
+              // Check if the file is an APK and the platform is Android
+              if (Platform.isAndroid && filePath.toLowerCase().endsWith('.apk')) {
+                // Request permission to install unknown apps
+                bool permissionGranted = await requestInstallPermission();
+                if (!permissionGranted) {
+                  _showToast(context, 'Permission denied to install APK.');
+                  return;
+                }
+                // Install APK
+                await OpenFile.open(filePath, type: 'application/vnd.android.package-archive');
+              } else {
+                // Open file
+                await OpenFile.open(filePath);
+              }
+            } else {
+              print('File does not exist');
+            }
+            Navigator.pop(context); // Close the dialog
+          },
+        ),
+      ],
+    ),
+  );
 }
 
-void _installApk(String filePath) {
-  final intent = AndroidIntent(
-    action: 'action_view',
-    data: 'file://$filePath',
-    type: 'application/vnd.android.package-archive',
+Future<bool> requestInstallPermission() async {
+  if (Platform.isAndroid) {
+    PermissionStatus status = await Permission.requestInstallPackages.request();
+    return status == PermissionStatus.granted;
+  }
+  return true; // Return true for non-Android platforms
+}
+
+void _showToast(BuildContext context, String message, {bool isError = false}) {
+  showPlatformDialog(
+    context: context,
+    builder: (_) => PlatformAlertDialog(
+      title: Text(isError ? 'Error' : 'Success'),
+      content: Text(message),
+      actions: <Widget>[
+        PlatformDialogAction(
+          child: PlatformText('OK'),
+          onPressed: () => Navigator.pop(context),
+        ),
+      ],
+    ),
   );
-  intent.launch();
+}
+
+void _openFile(String filePath) async {
+  final file = File(filePath);
+  if (await file.exists()) {
+    await OpenFile.open(filePath);
+  } else {
+    print('File does not exist');
+  }
 }

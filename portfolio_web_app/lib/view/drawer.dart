@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'app_color.dart';
@@ -15,37 +16,41 @@ class AppDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      child: ListView(
+      child: Scaffold(
+        body: ListView(
         padding: EdgeInsets.zero,
         children: [
-          DrawerHeader(
-            decoration: BoxDecoration(
-              color: Colors.grey.shade900,
-            ),
-            child: Center(
-              child: Column(
-                children: [
-                  CircleAvatar(
-                    radius: 40,
-                    backgroundImage: AssetImage('assets/images/MD Mehedi Hasan.jpg'),
-                  ),
-                  SizedBox(height: 10),
-                  Text(
-                    'MD Mehedi Hasan',
-                    style: TextStyle(
-                      color: AppColors.primaryColor,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
+          Container(
+            height: 180,
+            child: DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.grey.shade900,
+              ),
+              child: Center(
+                child: Column(
+                  children: [
+                    CircleAvatar(
+                      radius: 40,
+                      backgroundImage: AssetImage('assets/images/MD Mehedi Hasan.jpg'),
                     ),
-                  ),
-                  Text(
-                    'Flutter Application Developer',
-                    style: TextStyle(
-                      color: Colors.white.withOpacity(0.7),
-                      fontSize: 14,
+                    SizedBox(height: 10),
+                    Text(
+                      'MD Mehedi Hasan',
+                      style: TextStyle(
+                        color: AppColors.primaryColor,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
-                ],
+                    Text(
+                      'Flutter Application Developer',
+                      style: TextStyle(
+                        color: Colors.white.withOpacity(0.7),
+                        fontSize: 14,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
@@ -68,7 +73,7 @@ class AppDrawer extends StatelessWidget {
               title: Text('Home',
                 style: TextStyle(
                   fontSize: 18,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.w400,
                 )
               ),
               onTap: () {
@@ -98,7 +103,7 @@ class AppDrawer extends StatelessWidget {
               title: Text('About Me',
                   style: TextStyle(
                     fontSize: 18,
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w400,
                   )
               ),
               onTap: () {
@@ -128,7 +133,7 @@ class AppDrawer extends StatelessWidget {
               title: Text('Resume',
                   style: TextStyle(
                     fontSize: 18,
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w400,
                   )
               ),
               onTap: () {
@@ -158,7 +163,7 @@ class AppDrawer extends StatelessWidget {
               title: Text('Portfolio',
                   style: TextStyle(
                     fontSize: 18,
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w400,
                   )
               ),
               onTap: () {
@@ -188,7 +193,7 @@ class AppDrawer extends StatelessWidget {
               title: Text('Contact',
                   style: TextStyle(
                     fontSize: 18,
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w400,
                   )
               ),
               onTap: () {
@@ -208,8 +213,31 @@ class AppDrawer extends StatelessWidget {
                       width: 1.0,
                     )),
               )),
-          // Add more ListTile widgets for other sections
         ],
+                ),
+        bottomSheet: Container(
+          //color: CustomColor.white,
+          height: 50,
+          color: Colors.transparent,
+          child: Center(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Developed by MD Mehedi Hasan',
+                  style: TextStyle(fontSize: 15,),
+                  textAlign: TextAlign.center,
+                ),
+                Text(
+                  '© 2024 All Rights Reserved',
+                  style: TextStyle(fontSize: 15,),
+                  textAlign: TextAlign.center,
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }

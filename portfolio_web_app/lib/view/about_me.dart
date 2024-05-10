@@ -357,8 +357,8 @@ class _AboutMeMobileScreenState extends State<AboutMeMobileScreen> {
                                           Row(children: [
                                             InkWell(
                                               onTap: () {
-                                                _launchURL(
-                                                    'https://www.linkedin.com/in/mehedih2204/');
+                                                launchUrl(Uri.parse(
+                                                    'https://www.linkedin.com/in/mehedih2204/'));
                                               },
                                               hoverColor: Colors.deepOrangeAccent
                                                   .withOpacity(0.9),
@@ -383,8 +383,8 @@ class _AboutMeMobileScreenState extends State<AboutMeMobileScreen> {
                                             SizedBox(width: 10),
                                             InkWell(
                                               onTap: () {
-                                                _launchURL(
-                                                    'https://github.com/mehedi2204');
+                                                launchUrl(Uri.parse(
+                                                    'https://github.com/mehedi2204'));
                                               },
                                               hoverColor: Colors.deepOrangeAccent
                                                   .withOpacity(0.9),
@@ -409,8 +409,8 @@ class _AboutMeMobileScreenState extends State<AboutMeMobileScreen> {
                                             SizedBox(width: 10),
                                             InkWell(
                                               onTap: () {
-                                                _launchURL(
-                                                    'https://www.facebook.com/mehedih2204/');
+                                                launchUrl(Uri.parse(
+                                                    'https://www.facebook.com/mehedih2204/'));
                                               },
                                               hoverColor: Colors.deepOrangeAccent
                                                   .withOpacity(0.9),
@@ -435,7 +435,7 @@ class _AboutMeMobileScreenState extends State<AboutMeMobileScreen> {
                                             SizedBox(width: 10),
                                             InkWell(
                                               onTap: () {
-                                                _launchURL('https://youtube.com/');
+                                                launchUrl(Uri.parse('https://youtube.com/'));
                                               },
                                               hoverColor: Colors.deepOrangeAccent
                                                   .withOpacity(0.9),
@@ -1106,15 +1106,6 @@ class _AboutMeMobileScreenState extends State<AboutMeMobileScreen> {
       })
     );
   }
-
-  void _launchURL(String url) async {
-    Uri uri = Uri.parse(url); // Convert URL string to Uri object
-    if (await canLaunchUrl(uri)) {
-      await launchUrl(uri);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
 }
 
 
@@ -1440,8 +1431,8 @@ class _AboutMeTabletScreenState extends State<AboutMeTabletScreen> {
                                           Row(children: [
                                             InkWell(
                                               onTap: () {
-                                                _launchURL(
-                                                    'https://www.linkedin.com/in/mehedih2204/');
+                                                launchUrl(Uri.parse(
+                                                    'https://www.linkedin.com/in/mehedih2204/'));
                                               },
                                               hoverColor: Colors.deepOrangeAccent
                                                   .withOpacity(0.9),
@@ -1466,8 +1457,8 @@ class _AboutMeTabletScreenState extends State<AboutMeTabletScreen> {
                                             SizedBox(width: 10),
                                             InkWell(
                                               onTap: () {
-                                                _launchURL(
-                                                    'https://github.com/mehedi2204');
+                                                launchUrl(Uri.parse(
+                                                    'https://github.com/mehedi2204'));
                                               },
                                               hoverColor: Colors.deepOrangeAccent
                                                   .withOpacity(0.9),
@@ -1492,8 +1483,8 @@ class _AboutMeTabletScreenState extends State<AboutMeTabletScreen> {
                                             SizedBox(width: 10),
                                             InkWell(
                                               onTap: () {
-                                                _launchURL(
-                                                    'https://www.facebook.com/mehedih2204/');
+                                                launchUrl(Uri.parse(
+                                                    'https://www.facebook.com/mehedih2204/'));
                                               },
                                               hoverColor: Colors.deepOrangeAccent
                                                   .withOpacity(0.9),
@@ -1518,7 +1509,7 @@ class _AboutMeTabletScreenState extends State<AboutMeTabletScreen> {
                                             SizedBox(width: 10),
                                             InkWell(
                                               onTap: () {
-                                                _launchURL('https://youtube.com/');
+                                                launchUrl(Uri.parse('https://youtube.com/'));
                                               },
                                               hoverColor: Colors.deepOrangeAccent
                                                   .withOpacity(0.9),
@@ -2156,15 +2147,6 @@ class _AboutMeTabletScreenState extends State<AboutMeTabletScreen> {
       ),
     );
   }
-
-  void _launchURL(String url) async {
-    Uri uri = Uri.parse(url); // Convert URL string to Uri object
-    if (await canLaunchUrl(uri)) {
-      await launchUrl(uri);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
 }
 
 
@@ -2494,8 +2476,8 @@ class _AboutMeDesktopScreenState extends State<AboutMeDesktopScreen> {
                                 Row(children: [
                                   InkWell(
                                     onTap: () {
-                                      _launchURL(
-                                          'https://www.linkedin.com/in/mehedih2204/');
+                                      launchUrl(Uri.parse(
+                                          'https://www.linkedin.com/in/mehedih2204/'));
                                     },
                                     hoverColor: Colors.deepOrangeAccent
                                         .withOpacity(0.9),
@@ -2520,8 +2502,8 @@ class _AboutMeDesktopScreenState extends State<AboutMeDesktopScreen> {
                                   SizedBox(width: 10),
                                   InkWell(
                                     onTap: () {
-                                      _launchURL(
-                                          'https://github.com/mehedi2204');
+                                      launchUrl(Uri.parse(
+                                          'https://github.com/mehedi2204'));
                                     },
                                     hoverColor: Colors.deepOrangeAccent
                                         .withOpacity(0.9),
@@ -2546,8 +2528,8 @@ class _AboutMeDesktopScreenState extends State<AboutMeDesktopScreen> {
                                   SizedBox(width: 10),
                                   InkWell(
                                     onTap: () {
-                                      _launchURL(
-                                          'https://www.facebook.com/mehedih2204/');
+                                      launchUrl(Uri.parse(
+                                          'https://www.facebook.com/mehedih2204/'));
                                     },
                                     hoverColor: Colors.deepOrangeAccent
                                         .withOpacity(0.9),
@@ -2572,7 +2554,7 @@ class _AboutMeDesktopScreenState extends State<AboutMeDesktopScreen> {
                                   SizedBox(width: 10),
                                   InkWell(
                                     onTap: () {
-                                      _launchURL('https://youtube.com/');
+                                      launchUrl(Uri.parse('https://youtube.com/'));
                                     },
                                     hoverColor: Colors.deepOrangeAccent
                                         .withOpacity(0.9),
@@ -3176,14 +3158,5 @@ class _AboutMeDesktopScreenState extends State<AboutMeDesktopScreen> {
         ),
       ]);
     }));
-  }
-
-  void _launchURL(String url) async {
-    Uri uri = Uri.parse(url); // Convert URL string to Uri object
-    if (await canLaunchUrl(uri)) {
-      await launchUrl(uri);
-    } else {
-      throw 'Could not launch $url';
-    }
   }
 }
